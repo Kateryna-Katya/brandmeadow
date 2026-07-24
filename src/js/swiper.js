@@ -82,7 +82,7 @@ function initReviewsSwiper() {
 }
 
 function destroyMobileSwipers() {
-  if (frecordsSwiper) {
+  if (recordsSwiper) {
     recordsSwiper.destroy(true, true);
     recordsSwiper = null;
   }
