@@ -178,3 +178,42 @@ width: 1200px;
     justify-content: center;
 }
 }
+/*  Game Experience */
+.game-wrapper h3{
+text-align: left;
+}
+.game-list{
+    margin-top: 32px;
+    display: flex;
+    gap: 40px;
+}
+.game-item{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.game-item-number{
+font-family: "EB Garamond", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+
+    /* line-height: 26px; */
+    line-height: 1.08333;
+    color: #ffb020;
+}
+.game-item-text{
+    font-weight: 600;
+    font-size: 12px;
+}
+.g1{
+    padding-right: 40px;
+    border-right: 1px solid #2f3254;
+}
+@media only screen and (min-width: 1440px) {
+.game-container{
+    flex-direction: row;
+}
+.game-wrapper{
+width: 391px;
+}
+}
