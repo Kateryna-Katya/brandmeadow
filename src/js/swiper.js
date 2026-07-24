@@ -7,18 +7,18 @@ import 'swiper/css/pagination';
 
 const DESKTOP_BREAKPOINT = 1440;
 
-let featuresSwiper = null;
+let recordsSwiper = null;
 let howSwiper = null;
 let reviewsSwiper = null;
 
-function initFeaturesSwiper() {
-  const swiperElement = document.querySelector('.features-swiper');
+function initRecordsSwiper() {
+  const swiperElement = document.querySelector('.records-swiper');
 
-  if (!swiperElement || featuresSwiper) {
+  if (!swiperElement || recordsSwiper) {
     return;
   }
 
-  featuresSwiper = new Swiper(swiperElement, {
+  recordsSwiper = new Swiper(swiperElement, {
     modules: [Autoplay],
 
     slidesPerView: 1,
@@ -82,9 +82,9 @@ function initReviewsSwiper() {
 }
 
 function destroyMobileSwipers() {
-  if (featuresSwiper) {
-    featuresSwiper.destroy(true, true);
-    featuresSwiper = null;
+  if (frecordsSwiper) {
+    recordsSwiper.destroy(true, true);
+    recordsSwiper = null;
   }
 
   if (howSwiper) {
@@ -100,7 +100,7 @@ function destroyMobileSwipers() {
 
 function handleSwipers() {
   if (window.innerWidth < DESKTOP_BREAKPOINT) {
-    initFeaturesSwiper();
+    initRecordsSwiper();
     initHowSwiper();
     initReviewsSwiper();
     return;

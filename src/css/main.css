@@ -283,3 +283,19 @@ width: 280px;
 margin-top: 64px;
 }   
 }
+/* SCENIC RECORDS */
+@media only screen and (min-width: 1440px) {
+.records-swiper .swiper-wrapper{
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+}
+.records-swiper .swiper-slide{
+width: 384px;
+    height: 280px;
+}
+.records-swiper .r1{
+width: 588px;
+    height: 360px;
+}
+}
